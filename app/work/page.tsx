@@ -1,7 +1,6 @@
 'use client'
 
-import React from 'react'
-import {useState} from 'react'
+
 
 import Pagelayout from '@/components/Pagelayout'
 import {Carousel,CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '../../components/ui/carousel';
@@ -49,22 +48,13 @@ const projects =[
 ]
 const work = () => {
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const handleSlideChange = (index:number) => {
-   setCurrentIndex(index);
-  }
+  
   return (
     <div className='py-6 md:py-12'>
       <Pagelayout>
         
 <Carousel opts={{align:"start",loop:true}}
-className='w-full' onSelect={()=>{
-  const index=0;
-  if( typeof index === 'number'){
-    handleSlideChange(index);
-
-  }
-}}
+className='w-full' 
 >
   <CarouselContent>
     {projects.map((project)=>(
@@ -144,7 +134,7 @@ className='w-full' onSelect={()=>{
       </div>
       {/* Image Div */}
       <div className="w-full md:w-1/2 order-1 md:order-2">
-        <div className="relative h-64 md:h-96 bg-gray-700 rounded-lg overflow-hidden">
+        <div className="relative h-72 sm:h-96 bg-gray-700 rounded-lg overflow-hidden">
           <Image
             src={project?.image}
             alt={project.title}
