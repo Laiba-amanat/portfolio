@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from 'react'
+import React, { ChangeEvent, FormEvent, useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Textarea } from './ui/textarea'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from './ui/select'
@@ -111,7 +111,7 @@ const Contactform = () => {
 
 <Textarea  value={formData.Message} onChange={handleChange} disabled={loading}className="disabled:bg-white/10"   name='Message'placeholder='Text here' rows={5}/>
 
-<Select onValueChange={handelSelectChange} disabled={loading} className="disabled:bg-white/10" >
+<Select onValueChange={handelSelectChange} disabled={loading}  >
  <SelectTrigger>
      <SelectValue placeholder=" Select a service"/>
  </SelectTrigger>
