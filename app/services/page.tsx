@@ -40,7 +40,9 @@ const services = () => {
           <p className='text-sm md:text-base'>
             {item?.description}
           </p>
-          <Separtator className="bg-white/20"/>
+          <div className="bg-white/20">
+          <Separtator />
+          </div>
         </h2>
       </div>
       
