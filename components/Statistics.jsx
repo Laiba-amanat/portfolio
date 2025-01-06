@@ -6,10 +6,10 @@ import CountUp from 'react-countup';
 const Statistics = () => {
 
     const StatsData=[
-        {num:12,title:"Years of experience"},
-        {num:25,title:"Project of completed"},
+        {num:8,title:"Months of experience"},
+        {num:5,title:"Project of completed"},
         {num:8,title:"Technologies mastered"},
-        {num:500,title:"Code commits"},
+        {num:50,title:"Code commits"},
     ]
   return (
     <div className='flex flex-col items-center md:flex-row gap-2.5 md:gap-5 pt-5    '>
