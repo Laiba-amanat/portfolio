@@ -4,7 +4,8 @@
 
 import Pagelayout from '@/components/Pagelayout'
 import {Carousel,CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '../../components/ui/carousel';
-import project1 from "../../photo/project1.jpg";
+import project1 from "../../photo/project1.png";
+import project2 from "../../photo/project2.png";
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 import { Separator } from '@/components/ui/separator';
@@ -18,33 +19,33 @@ const projects =[
   {
     id:"01",
     title:"E-comerce plateform",
-    category:" Full stack Web Development",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    stack:["Next.js","Tailwend css","stripe","Postgresql"],
+    category:" Froentend Development",
+    description:"I developed a web application using React, focusing on building a dynamic and responsive user interface. The project involved creating interactive components, managing state with hooks, and ensuring seamless user experience across different devices.",
+    stack:["React.js","Tailwend css"],
     image:project1,
-    liveUrl:"https://example.com",
-    githubUrl:"https://github.com",
+    liveUrl:"https://project-rho-navy.vercel.app/",
+    githubUrl:"https://github.com/itx-sherazi",
   },
   {
     id:"02",
     title:"E-comerce plateform",
     category:" Full stack Web Development",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    stack:["Next.js","Tailwend css","stripe","Postgresql"],
-    image:project1,
-    liveUrl:"https://example.com",
-    githubUrl:"https://github.com",
+    description:"I developed a web application using React,Node and Express  focusing on building a dynamic and responsive user interface. The project involved creating interactive components, managing state with hooks, and ensuring seamless user experience across different devices.",
+    stack:["Next.js","Tailwend css","stripe","Node.js","Express.js"],
+    image:project2,
+    liveUrl:"https://backendfolder-ysbh.vercel.app/",
+    githubUrl:"https://github.com/itx-sherazi",
   },
-  {
-    id:"03",
-    title:"E-comerce plateform",
-    category:" Full stack Web Development",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    stack:["Next.js","Tailwend css","stripe","Postgresql"],
-    image:project1,
-    liveUrl:"https://example.com",
-    githubUrl:"https://github.com",
-  },
+  // {
+  //   id:"03",
+  //   title:"E-comerce plateform",
+  //   category:" Full stack Web Development",
+  //   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   stack:["Next.js","Tailwend css","stripe","Postgresql"],
+  //   image:project1,
+  //   liveUrl:"https://example.com",
+  //   githubUrl:"https://github.com/itx-sherazi",
+  // },
 ]
 const work = () => {
 

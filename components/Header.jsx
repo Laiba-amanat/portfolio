@@ -39,8 +39,8 @@ const Header = () => {
             </span>
           </Link>
           <Link
-  // href="https://drive.google.com/file/d/1lEh9RV0BBOlKyijNIWiuKdJXA1RAVAeA/view?usp=sharing "
-    href="/"
+   href="https://drive.google.com/file/d/1lEh9RV0BBOlKyijNIWiuKdJXA1RAVAeA/view?usp=sharing "
+    
   target="_blank"
      className="cursor-pointer bg-green-700 text-white text-sm font-bold py-2 px-10 rounded hover:bg-green-500 hover:text-black  hoverEffect "
 >
@@ -126,8 +126,8 @@ const Header = () => {
   </Link>
   
   <Link
-  // href="https://drive.google.com/file/d/1lEh9RV0BBOlKyijNIWiuKdJXA1RAVAeA/view?usp=sharing "
-  href="/"
+  href="https://drive.google.com/file/d/1lEh9RV0BBOlKyijNIWiuKdJXA1RAVAeA/view?usp=sharing "
+  
   target="_blank"
      className="cursor-pointer bg-green-700 text-white text-sm font-bold py-2 px-20 rounded hover:bg-green-500 hover:text-black  hoverEffect "
 >

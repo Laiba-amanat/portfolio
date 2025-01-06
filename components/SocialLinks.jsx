@@ -19,12 +19,12 @@ const SocialLinks = () => {
         {
           title: "Linkedin",
           icon: <Linkedin />,
-          href: "http://www.linkedin.com",
+          href: "https://www.linkedin.com/in/sheraz-ali-85885a2b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
         {
           title: "Facebook",
           icon: <Facebook />,
-          href: "http://www.facebook.com",
+          href: "https://www.facebook.com/share/17vHF1PEv9/?mibextid=qi2Omg",
         },
         {
           title: "Slack",
