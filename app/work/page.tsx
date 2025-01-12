@@ -5,7 +5,7 @@
 import Pagelayout from '@/components/Pagelayout'
 import {Carousel,CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '../../components/ui/carousel';
 import project1 from "../../photo/project1.png";
-import project2 from "../../photo/project2.png";
+import project2 from "../../photo/p3.jpg";
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 import { Separator } from '@/components/ui/separator';
@@ -24,7 +24,7 @@ const projects =[
     stack:["React.js","Tailwend css"],
     image:project1,
     liveUrl:"https://project-rho-navy.vercel.app/",
-    githubUrl:"https://github.com/itx-sherazi",
+    githubUrl:"https://github.com/",
   },
   {
     id:"02",
@@ -33,8 +33,8 @@ const projects =[
     description:"I developed a web application using React,Node and Express  focusing on building a dynamic and responsive user interface. The project involved creating interactive components, managing state with hooks, and ensuring seamless user experience across different devices.",
     stack:["Next.js","Tailwend css","stripe","Node.js","Express.js"],
     image:project2,
-    liveUrl:"https://backendfolder-ysbh.vercel.app/",
-    githubUrl:"https://github.com/itx-sherazi",
+    liveUrl:"https://rostrantwebsite.vercel.app/ ",
+    githubUrl:"https://github.com/",
   },
   // {
   //   id:"03",
