@@ -40,14 +40,21 @@ const tabscontent = {
   education: {
     title: 'Education Background',
     items: [
-     
       {
-        Class: 'Intermediate',
+        Class: 'Graduate',
         major: 'Computer Science',
-        college: 'Superrrior College',
-        duration: '2020-2022',
-        description: 'Background in Computer Science Background in Computer Science Background in Computer Science',
+        college: 'GCUF',
+        duration: '2021-2025',
+        description: 'I have recently completed my 6th semester in the Computer Science department, achieving an impressive 3.92 GPA.',
         achievements: ['Academic Excellence Award', 'Programming Club Leader', 'Computer Science'],
+      },
+      {
+        Class: 'Short Corse',
+            major: 'Full Stack Devlopment',
+              college: 'IDEO VERCITY',
+            duration: '2024',
+              description: 'I have recently completed Full Stack Devlopment corse IDEO , achieving an impressive Grade A+',
+           achievements: ['Academic Excellence Award', 'Programming Club Leader', 'Full Stack Devlopment'],
       },
     ],
   },
@@ -67,7 +74,7 @@ const tabscontent = {
       {
         name: 'Tools & Others',
         description: 'Experienced with version control using Git and GitHub, and proficient in using tools like Postman for API testing, and Visual Studio Code for development. Familiar with deployment tools such as Netlify and Heroku for hosting web applications.',
-        skills: ['Git', 'GitHub', 'VS Code', 'AWS'],
+        skills: ['Git', 'GitHub', 'VS Code', 'nodemailer'],
       },
     ],
   },

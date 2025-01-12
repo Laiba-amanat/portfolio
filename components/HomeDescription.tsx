@@ -11,7 +11,7 @@ const HomeDescription = () => {
   const [hasLoaded, setHasLoaded] = useState(false);
 
   // Description text
-  const description = "II'm a Full Stack Developer with 8 months of hands-on experience in building responsive and scalable web applications. I work with technologies like React, Node.js, Express, and MongoDB, focusing on creating seamless user experiences. I'm passionate about learning and improving my skills to develop innovative solutions."
+  const description = "II'm a Full Stack Developer with 1 year of hands-on experience in building responsive and scalable web applications. I work with technologies like React, Node.js, Express, and MongoDB, focusing on creating seamless user experiences. I'm passionate about learning and improving my skills to develop innovative solutions."
   // Use `displayedText` as per the hook
   const { displayedText = "", isComplete = false } = useTypeWriter(description, 30);
 

@@ -17,7 +17,7 @@ export default function Home() {
           <div>
             <h3 className="font-semibold text-4xl md:text-2xl tracking-wider mb-1">Web Devolper</h3>
             <h2 className="text-3xl md:text-5xl mb-2 text-white">Hello I&apos;m</h2>
-            <h1 className="text-lightsky text-5xl md:text-7xl tracking-normal"> Sheraz</h1>
+            <h1 className="text-lightsky text-5xl md:text-7xl tracking-normal">Laiba</h1>
          <div className="w-full h-[170px] md:h-[170px] ">
           <div className=" top-0 left-0 w-full h-full ">
           <HomeDescription/>

@@ -9,21 +9,21 @@ import React from 'react'
 
 const infoData=[{
   title:'phone',
-  description:'+92 3245637307',
+  description:'+92 3164020056',
   icon:<Phone/>
 
 },
 {
 
 title:'Email',
-description:'sa0071429@gmail.com',
+description:'laibaamanat77@gmail.com',
 icon:<Mail/>
 
 },
 {
 
   title:'Address',
-  description:'Okara',
+  description:'Muridke',
   icon:<MapPinCheck/>
   
   },

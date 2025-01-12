@@ -61,7 +61,7 @@ const Contactform = () => {
            form.append('DateTime', currentDateTime);
 
 
-           const response = await fetch('https://getform.io/f/aolldepb',{
+           const response = await fetch('https://getform.io/f/bxooxlpa',{
                 method:'POST',
                 body:form,
            })
@@ -96,7 +96,7 @@ const Contactform = () => {
   return (
     <div className='space-y-4'>
         <h3 className='text-2xl md:text-4xl text-lightsky'>Let&apos;s work together</h3>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum non cumque, cupiditate magni, ex fugit illum </p>
+     <p>I am a Full Stack Developer with 1 year of hands-on experience in building responsive and scalable web applications. </p>
     <>
     {success ? <SuccessMsg status={status} /> :
      <form onSubmit={handelSubmit} className='flex flex-col  gap-4 '>

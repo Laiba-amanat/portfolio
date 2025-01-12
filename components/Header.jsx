@@ -18,7 +18,7 @@ const Header = () => {
       <div className="py-5 flex items-center justify-between bg-bodyColor max-w-screen-xl mx-auto pl-5">
         {/* Left Logo */}
         <div className="group pl-10 text-2xl font-bold">
-          <span className="hover:text-green-400">Sheraz</span>&nbsp;
+          <span className="hover:text-green-400">laiba</span>&nbsp;
           <span className="hoverEffect text-green-400 hover:text-green-400">.</span>
         </div>
 
@@ -70,8 +70,9 @@ const Header = () => {
             </span>
           </Link>
           <Link
-            href="/"
+            href={"/laiba.pdf"}
             target="_blank"
+            rel="noopener noreferrer"
             className="cursor-pointer bg-green-700 text-white text-sm font-bold py-2 px-10 rounded hover:bg-green-500 hover:text-black hoverEffect"
           >
             HIRE ME

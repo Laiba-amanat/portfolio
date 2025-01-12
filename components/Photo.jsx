@@ -4,7 +4,7 @@
 
 'use client'
 import React from 'react'
-import hero from "@/photo/Main.png"
+import hero from "@/photo/hub.png"
 import Image from 'next/image'
 import { motion } from "motion/react"
 
