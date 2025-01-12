@@ -1,57 +1,84 @@
-"use client"; // 👈 Required for Next.js if you're using hooks
+"use client";
 
 import React, { useState } from "react";
-import Link from "next/link"; 
-import SocialLinks from"./SocialLinks"// ✅ Import Link from Next.js
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // State for opening/closing the menu
+import Link from "next/link";
+import { usePathname } from "next/navigation"; // Hook to get the current pathname
+import SocialLinks from "./SocialLinks";
 
-  const toggleMenu = () => setMenuOpen(!menuOpen); // Function to toggle menu open/close
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname(); // Get the current path
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const isActive = (path) => pathname === path; // Function to check active link
 
   return (
-    <header className="border-b-2 border-green-400  bg-bodyColor text-white sticky top-0 z-50">
+    <header className="border-b-2 border-green-400 bg-bodyColor text-white sticky top-0 z-50">
       <div className="py-5 flex items-center justify-between bg-bodyColor max-w-screen-xl mx-auto pl-5">
         {/* Left Logo */}
         <div className="group pl-10 text-2xl font-bold">
-          <span className="hover:text-green-400 ">Sheraz</span>&nbsp;
-          <span className=" hoverEffect text-green-400 hover:text-green-400 ">.</span>
+          <span className="hover:text-green-400">Sheraz</span>&nbsp;
+          <span className="hoverEffect text-green-400 hover:text-green-400">.</span>
         </div>
 
-        {/* Desktop Menu (Visible on large screens only) */}
+        {/* Desktop Menu */}
         <nav className="hidden group md:flex pr-10 gap-8 text-sm">
           <Link href="/">
-            <span className="cursor-pointer text-green-400 underline font-semibold  hover:text-green-400 ">HOME</span>
+            <span
+              className={`cursor-pointer ${
+                isActive("/") ? "text-green-400 underline" : ""
+              } hover:underline`}
+            >
+              HOME
+            </span>
           </Link>
           <Link href="/services">
-            <span className="cursor-pointer hover:text-green-400 ">
+            <span
+              className={`cursor-pointer ${
+                isActive("/services") ? "text-green-400 underline" : ""
+              } hover:underline`}
+            >
               SERVICES
             </span>
           </Link>
           <Link href="/resume">
-            <span className="cursor-pointer hover:text-green-400 ">RESUME</span>
+            <span
+              className={`cursor-pointer ${
+                isActive("/resume") ? "text-green-400 underline" : ""
+              } hover:underline`}
+            >
+              RESUME
+            </span>
           </Link>
           <Link href="/work">
-            <span className="cursor-pointer hover:text-green-400 ">WORK</span>
+            <span
+              className={`cursor-pointer ${
+                isActive("/work") ? "text-green-400 underline" : ""
+              } hover:underline`}
+            >
+              WORK
+            </span>
           </Link>
           <Link href="/contact">
-            <span className="cursor-pointer hover:text-green-400 ">
+            <span
+              className={`cursor-pointer ${
+                isActive("/contact") ? "text-green-400 underline" : ""
+              } hover:underline`}
+            >
               CONTACT
             </span>
           </Link>
           <Link
-   href="https://drive.google.com/file/d/1lEh9RV0BBOlKyijNIWiuKdJXA1RAVAeA/view?usp=sharing "
-    
-  target="_blank"
-     className="cursor-pointer bg-green-700 text-white text-sm font-bold py-2 px-10 rounded hover:bg-green-500 hover:text-black  hoverEffect "
->
-  HIRE ME
-</Link>
-
-
-
-
+            href="/"
+            target="_blank"
+            className="cursor-pointer bg-green-700 text-white text-sm font-bold py-2 px-10 rounded hover:bg-green-500 hover:text-black hoverEffect"
+          >
+            HIRE ME
+          </Link>
         </nav>
-        {/* Mobile Hamburger Button (Visible on small screens only) */}
+
+        {/* Mobile Hamburger Button */}
         <button
           className="md:hidden mr-5 flex flex-col items-center justify-center w-10 h-10"
           onClick={toggleMenu}
@@ -78,72 +105,65 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         <nav className="mt-16 flex group flex-col gap-6 items-start pl-4">
-
-  <div className="group pl-0 text-xl font-bold items-start ">
-    <span className="hover:text-green-400">Sheraz</span>&nbsp;
-    <span className="hoverEffect text-green-400 hover:text-green-400">.</span>
-  </div>
-
-  <Link href="/">
-    <span
-      className="cursor-pointer hover:text-green-400 text-sm"
-      onClick={toggleMenu}
-    >
-      HOME
-    </span>
-  </Link>
-  <Link href="/services">
-    <span
-      className="cursor-pointer hover:text-green-400 text-sm"
-      onClick={toggleMenu}
-    >
-      SERVICES
-    </span>
-  </Link>
-  <Link href="/resume">
-    <span
-      className="cursor-pointer hover:text-green-400 text-sm"
-      onClick={toggleMenu}
-    >
-      RESUME
-    </span>
-  </Link>
-  <Link href="/work">
-    <span
-      className="cursor-pointer hover:text-green-400 text-sm"
-      onClick={toggleMenu}
-    >
-      WORK
-    </span>
-  </Link>
-  <Link href="/contact">
-    <span
-      className="cursor-pointer hover:text-green-400 text-sm"
-      onClick={toggleMenu}
-    >
-      CONTACT
-    </span>
-  </Link>
-  
-  <Link
-  href="https://drive.google.com/file/d/1lEh9RV0BBOlKyijNIWiuKdJXA1RAVAeA/view?usp=sharing "
-  
-  target="_blank"
-     className="cursor-pointer bg-green-700 text-white text-sm font-bold py-2 px-20 rounded hover:bg-green-500 hover:text-black  hoverEffect "
->
-  HIRE ME
-</Link>
-
-
-
-
-    <SocialLinks />
-
-
-
-
-</nav>
-
+          <Link href="/">
+            <span
+              className={`cursor-pointer text-sm ${
+                isActive("/") ? "text-green-400 underline" : ""
+              } hover:underline`}
+              onClick={toggleMenu}
+            >
+              HOME
+            </span>
+          </Link>
+          <Link href="/services">
+            <span
+              className={`cursor-pointer text-sm ${
+                isActive("/services") ? "text-green-400 underline" : ""
+              } hover:underline`}
+              onClick={toggleMenu}
+            >
+              SERVICES
+            </span>
+          </Link>
+          <Link href="/resume">
+            <span
+              className={`cursor-pointer text-sm ${
+                isActive("/resume") ? "text-green-400 underline" : ""
+              } hover:underline`}
+              onClick={toggleMenu}
+            >
+              RESUME
+            </span>
+          </Link>
+          <Link href="/work">
+            <span
+              className={`cursor-pointer text-sm ${
+                isActive("/work") ? "text-green-400 underline" : ""
+              } hover:underline`}
+              onClick={toggleMenu}
+            >
+              WORK
+            </span>
+          </Link>
+          <Link href="/contact">
+            <span
+              className={`cursor-pointer text-sm ${
+                isActive("/contact") ? "text-green-400 underline" : ""
+              } hover:underline`}
+              onClick={toggleMenu}
+            >
+              CONTACT
+            </span>
+          </Link>
+          <Link
+            href="/"
+            target="_blank"
+            className="cursor-pointer bg-green-700 text-white text-sm font-bold py-2 px-20 rounded hover:bg-green-500 hover:text-black hoverEffect"
+          >
+            HIRE ME
+          </Link>
+          <SocialLinks />
+        </nav>
       </div>
     </header>
   );

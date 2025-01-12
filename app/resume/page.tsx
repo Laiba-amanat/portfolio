@@ -81,7 +81,7 @@ const tabscontent = {
 
 const Resume = () => {
   return (
-    <div className="flex flex-col justify-center py-10 bg-gray-900 min-h-screen overflow-x-hidden">
+    <div className="flex flex-col justify-center py-10 bg-bodyColor min-h-screen overflow-x-hidden">
       <Pagelayout>
         <Tabs defaultValue="experience" className="flex flex-col w-full md:flex-row gap-6 md:gap-10">
           <TabsList className="flex flex-wrap gap-2 md:flex-col md:w-64">

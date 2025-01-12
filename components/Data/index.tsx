@@ -12,13 +12,13 @@ export const servicesData=[
     //     href:"https://github.com/"
     // },
     {
-        _id:"03",
+        _id:"02",
         title:"UI/UX Design",
         description:"I design intuitive and visually appealing user interfaces, focusing on delivering seamless user experiences for websites and apps.",
  href:"https://github.com/"
     },
     {
-        _id:"04",
+        _id:"03",
         title:"SEO Optimization",
         
 description:"I optimize websites to improve search engine rankings, drive organic traffic, and enhance online visibility through on-page and off-page SEO techniques.",
